@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "project": {
+    "name": "grey-turtle"
+  },
+  "api": {
+    "projectId": "oyqri6d8",
+    "dataset": "production",
+    "Authorization": "skS2owofdzCzlajCHY8OXiRe9zsS4bRZw4DO8lWICXiEXiOpev7HoMRQs8XqcoOcPeaPm3qoa4vPurydA"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["@sanity/vision"]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/root",
+      "path": "plugins/sanity-plugin-tutorial/CustomDefaultLayout"
+    }
+  ]
+}
