@@ -36,6 +36,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
 import Cprogramming from '../assets/Cprogramming.png';
+import resumeIcons from '../assets/doc.gif';
 import java from '../assets/java.png';
 import mongodb from '../assets/mongodb.png';
 import myProfile from '../assets/pitry.png';
@@ -78,4 +79,5 @@ export default {
   mongodb,
   Cprogramming,
   java,
+  resumeIcons
 };

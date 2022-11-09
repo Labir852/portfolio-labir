@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
         <div className="app__navbar-logo">
-          <h3 className="logo"><a href="#">LABIR</a></h3>
+          <h4 className="logo"><a href="#">LABIR</a></h4>
         </div>
         <ul className='app__navbar-links'>
           {['home','about','work','skills','testimonials','contact'].map((item)=>(
@@ -26,7 +26,7 @@ const Navbar = () => {
             whileInView = {{x:[300,0]}}
             transition = {{duration:0.85,ease:'easeOut'}}
             >
-            <h3 className="logo"><a href="#">LABIR</a></h3>
+            <h4 className="logo"><a href="#">LABIR</a></h4>
             <HiX onClick={()=>setToggle(false)} />
             
             <ul>

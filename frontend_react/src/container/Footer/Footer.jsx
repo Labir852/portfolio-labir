@@ -49,9 +49,15 @@ const Footer = () => {
             </div>
 
             <div className="app__footer-card">
+                <img src={images.resumeIcons} alt="resume" />
+                <a href="https://github.com/Labir852/portfolio-labir/raw/main/frontend_react/src/assets/Tanvir's%20Resume.pdf"  className="p-text" rel="noreferrer">My Resume</a>
+            </div>
+
+            <div className="app__footer-card">
                 <img src={images.mobile} alt="mobile" />
                 <a href="tel:+8801842724386" className="p-text">+8801842724386</a>
             </div>
+            
         </div>
 
         {
