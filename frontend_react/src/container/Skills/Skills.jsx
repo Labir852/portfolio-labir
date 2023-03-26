@@ -12,6 +12,7 @@ const [skills, setSkills] = useState([]);
     const skillsQuery = '*[_type == "skills"]';
     client.fetch(query)
     .then((data) => {
+      data.sort((y1, y2) => (y1.year > y2.year) ? 1 : (y1.year < y2.year) ? -1 : 0);
       setExperience(data);
     })
 
@@ -49,6 +50,7 @@ const [skills, setSkills] = useState([]);
 
         <motion.div className="app__skills-exp">
             {experience.map((experience)=>(
+              
 
               <motion.div
               className="app__skills-exp-item"
