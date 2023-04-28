@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { client } from '../../client';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -94,6 +95,11 @@ const Footer = () => {
           </h3>
         </div>
         }
+
+<MessengerCustomerChat
+    pageId="100089554847431"
+    appId="568336105423425"
+  />
     </>
   )
 }
