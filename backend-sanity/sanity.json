@@ -1,12 +1,12 @@
 {
   "root": true,
-  "project": {
-    "name": "grey-turtle"
-  },
   "api": {
     "projectId": "oyqri6d8",
     "dataset": "production",
     "Authorization": "skS2owofdzCzlajCHY8OXiRe9zsS4bRZw4DO8lWICXiEXiOpev7HoMRQs8XqcoOcPeaPm3qoa4vPurydA"
+  },
+  "project": {
+    "name": "grey-turtle"
   },
   "plugins": [
     "@sanity/base",
@@ -16,7 +16,9 @@
   ],
   "env": {
     "development": {
-      "plugins": ["@sanity/vision"]
+      "plugins": [
+        "@sanity/vision"
+      ]
     }
   },
   "parts": [
