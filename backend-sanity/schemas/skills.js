@@ -21,6 +21,11 @@ export default{
               hotspot: true,
             },
         },
+        {
+            name:'Priority',
+            title:'Priority',
+            type:'int'
+        },
         
     ]
 }
