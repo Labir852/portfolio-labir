@@ -40,8 +40,15 @@ import resumeIcons from '../assets/doc.gif';
 import java from '../assets/java.png';
 import mongodb from '../assets/mongodb.png';
 import myProfile from '../assets/pitry.png';
+import myProfile1 from '../assets/photo1.png';
+import myProfile2 from '../assets/photo2.png';
+import SQL from '../assets/MSSQL SERVER.jpg';
+import dotnet from '../assets/asp.net.webp';
+
 
 export default {
+  SQL,
+  dotnet,
   email,
   mobile,
   api,
@@ -76,6 +83,8 @@ export default {
   skype,
   spotify,
   myProfile,
+  myProfile1,
+  myProfile2,
   mongodb,
   Cprogramming,
   java,

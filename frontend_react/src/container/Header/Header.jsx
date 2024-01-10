@@ -45,7 +45,7 @@ const Header = () => {
       className="app__header-img">
       
 
-      <img src={images.myProfile} alt="profile-bg" />
+      <img src={images.myProfile1} alt="profile-bg" />
       
       <motion.img whileInView={{scale:[0,1]}} 
       transition={{duration:1,ease:'easeInOut'}}
@@ -57,7 +57,7 @@ const Header = () => {
         variant={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className="app__header-circles">
-          {[images.node,images.react,images.sass,].map((circle,index) => (
+          {[images.dotnet,images.react,images.SQL,].map((circle,index) => (
             <div className="circle-cmp app__flex" key={`circle-${index}`}>
               <img src={circle} alt="circle" />
             </div>
