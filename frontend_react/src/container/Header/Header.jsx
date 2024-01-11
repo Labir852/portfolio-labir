@@ -46,6 +46,7 @@ const Header = () => {
       
 
       <img src={images.myProfile1} alt="profile-bg" />
+
       
       <motion.img whileInView={{scale:[0,1]}} 
       transition={{duration:1,ease:'easeInOut'}}

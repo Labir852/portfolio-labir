@@ -26,6 +26,7 @@ import about04 from '../assets/about04.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import profile from '../assets/profile.png';
+import profilePhoto from '../assets/photoprofile_1.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -88,5 +89,6 @@ export default {
   mongodb,
   Cprogramming,
   java,
-  resumeIcons
-};
+  resumeIcons,
+  profilePhoto
+} ;
