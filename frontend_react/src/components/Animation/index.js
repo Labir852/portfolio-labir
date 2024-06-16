@@ -333,7 +333,7 @@ export const preLoaderAnim = () => {
     ease: "power3.inOut",
   })
     .to(".landing", {
-      duration: 0.05,
+      duration: 0.01,
       css: { overflowY: "hidden", height: "90vh" },
     })
     .to(".texts-container", {
@@ -342,7 +342,7 @@ export const preLoaderAnim = () => {
       ease: "Power3.easeOut",
     })
     .from(".texts-container span", {
-      duration: 1.5,
+      duration: 0.5,
       delay: 0.5,
       y: 50,
       opacity: 0,
