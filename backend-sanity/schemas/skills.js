@@ -24,7 +24,7 @@ export default{
         {
             name:'Priority',
             title:'Priority',
-            type:'int'
+            type:'string'
         },
         
     ]

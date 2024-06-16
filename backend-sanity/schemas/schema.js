@@ -11,8 +11,9 @@ import skills from './skills'
 import testimonials from './testimonials'
 import workExperience from './workExperience'
 import works from './works'
+import header from './header'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: 'default',
-  types: schemaTypes.concat([works, testimonials, brands, abouts, skills, workExperience, experiences, contact,]),
+  types: schemaTypes.concat([works, testimonials, brands, abouts, skills, workExperience, experiences, contact,header]),
 })

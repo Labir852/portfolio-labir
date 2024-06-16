@@ -53,7 +53,8 @@ import swe from '../assets/hacker.png';
 import researcher from '../assets/researcher.png';
 import researcher1 from '../assets/research.png';
 import instructor from '../assets/instructor.png';
-
+import hellowelcome from '../assets/hellowelcome.png';
+import hello from '../assets/hello.gif';
 export default {
   SQL,
   dotnet,
@@ -105,5 +106,7 @@ export default {
   swe,
   researcher,
   researcher1,
-  instructor
+  instructor,
+  hellowelcome,
+  hello
 } ;

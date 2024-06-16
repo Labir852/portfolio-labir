@@ -4,7 +4,6 @@ import ReactToolTip from 'react-tooltip';
 import { client, urlFor } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Skills.scss';
-import { images } from '../../constants';
 
 
 const Skills = () => {
@@ -21,9 +20,9 @@ const [skills, setSkills] = useState([]);
 
     client.fetch(skillsQuery)
     .then((data) => {
-      // console.log(data);
+
       data.sort((p1, p2) => (parseInt(p1.Priority) > parseInt(p2.Priority)) ? 1 : (parseInt(p1.Priority) < parseInt(p2.Priority)) ? -1 : 0);
-      // console.log(data);
+
       setSkills(data);
     })
   },[])

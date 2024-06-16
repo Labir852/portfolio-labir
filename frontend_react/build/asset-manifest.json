@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.d860f7cb.css",
-    "main.js": "/static/js/main.c4326daf.js",
+    "main.css": "/static/css/main.46c3d042.css",
+    "main.js": "/static/js/main.a3d84c4f.js",
+    "static/media/photoprofile2.png": "/static/media/photoprofile2.051e3501e277976f28f8.png",
+    "static/media/photoprofile3.png": "/static/media/photoprofile3.d18cb6b5f95fac4863a0.png",
     "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
+    "static/media/hello.gif": "/static/media/hello.c2b833eca528d6342c50.gif",
     "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/doc.gif": "/static/media/doc.808f3df7e6797008fd5e.gif",
     "static/media/about01.png": "/static/media/about01.080509de05322b7aafda.png",
@@ -17,15 +20,23 @@
     "static/media/spotify.png": "/static/media/spotify.2b5e9be1eb1ab501e7cd.png",
     "static/media/Rocketwildness-7BB8R.ttf": "/static/media/Rocketwildness-7BB8R.596d363dead4c437e0ab.ttf",
     "static/media/nb.png": "/static/media/nb.98f3253e32cc67a4cb5e.png",
+    "static/media/react.png": "/static/media/react.f8fd16f1cbd3ba7266ea.png",
     "static/media/asus.png": "/static/media/asus.514bc34955008a92e09f.png",
+    "static/media/Tanvir's Resume.pdf": "/static/media/Tanvir's Resume.c7c950203bcf4e041d4d.pdf",
     "static/media/adidas.png": "/static/media/adidas.83df8153294f9137d308.png",
+    "static/media/research.png": "/static/media/research.7599960d56bf4971eca1.png",
+    "static/media/researcher.png": "/static/media/researcher.72fbf55ee62b49483ff6.png",
     "static/media/Cprogramming.png": "/static/media/Cprogramming.bf0af88d24cd724c83bc.png",
-    "static/media/MSSQL SERVER.jpg": "/static/media/MSSQL SERVER.1a3b881e0b4e9ca00bce.jpg",
+    "static/media/cmsflogo.png": "/static/media/cmsflogo.a96702db3e94f1a87fdb.png",
     "static/media/bolt.png": "/static/media/bolt.64e7d9d30ece478ef3a0.png",
+    "static/media/hellowelcome.png": "/static/media/hellowelcome.d2eef4afd6e9071be340.png",
     "static/media/mongodb.png": "/static/media/mongodb.3cc78486b3a98dd258fe.png",
     "static/media/java.png": "/static/media/java.183384f9db04c2e268d2.png",
     "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/hacker.png": "/static/media/hacker.4124d026d0da868ba317.png",
+    "static/media/instructor.png": "/static/media/instructor.7ba5be205d68e8e82202.png",
+    "static/media/MSSQL SERVER.jpg": "/static/media/MSSQL SERVER.ec8e69b5493cfa94a2e0.jpg",
     "static/media/asp.net.webp": "/static/media/asp.net.bba97a9b84052378f52b.webp",
     "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/cpp.png": "/static/media/cpp.9002a804bbfa0354d0b8.png",
@@ -34,16 +45,17 @@
     "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
     "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
     "static/media/figma.png": "/static/media/figma.152e55329b6f1915967e.png",
+    "static/media/c\u0000#.png": "/static/media/c#.8dd67c87b0c8140f68a4.png",
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "static/media/skype.png": "/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/index.html",
-    "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
-    "main.d860f7cb.css.map": "/static/css/main.d860f7cb.css.map",
-    "main.c4326daf.js.map": "/static/js/main.c4326daf.js.map"
+    "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
+    "main.46c3d042.css.map": "/static/css/main.46c3d042.css.map",
+    "main.a3d84c4f.js.map": "/static/js/main.a3d84c4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d860f7cb.css",
-    "static/js/main.c4326daf.js"
+    "static/css/main.46c3d042.css",
+    "static/js/main.a3d84c4f.js"
   ]
 }

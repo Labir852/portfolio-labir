@@ -3,6 +3,7 @@ import { client } from '../../client';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footer.scss';
+import resume from '../../assets/Tanvir\'s Resume.pdf'
 const Footer = () => {
 
   const [formData, setFormData] = useState({name:'',email:'',message:''});
@@ -50,7 +51,7 @@ const Footer = () => {
 
             <div className="app__footer-card">
                 <img src={images.resumeIcons} alt="resume" />
-                <a href="https://github.com/Labir852/portfolio-labir/raw/main/frontend_react/src/assets/Tanvir's%20Resume.pdf"  className="p-text" rel="noreferrer">My Resume</a>
+                <a href={resume}  className="p-text" rel="noreferrer">My Resume</a>
             </div>
 
             <div className="app__footer-card">
