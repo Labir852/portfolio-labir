@@ -4,6 +4,9 @@ import ReactToolTip from 'react-tooltip';
 import { client, urlFor } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Skills.scss';
+import { images } from '../../constants';
+
+
 const Skills = () => {
 const [experience, setExperience] = useState([]);
 const [skills, setSkills] = useState([]);
@@ -12,13 +15,15 @@ const [skills, setSkills] = useState([]);
     const skillsQuery = '*[_type == "skills"]';
     client.fetch(query)
     .then((data) => {
-      data.sort((y1, y2) => (y1.year > y2.year) ? 1 : (y1.year < y2.year) ? -1 : 0);
+      data.sort((y1, y2) => (y1.year < y2.year) ? 1 : (y1.year > y2.year) ? -1 : 0);
       setExperience(data);
     })
 
     client.fetch(skillsQuery)
     .then((data) => {
-      console.log(data);
+      // console.log(data);
+      data.sort((p1, p2) => (parseInt(p1.Priority) > parseInt(p2.Priority)) ? 1 : (parseInt(p1.Priority) < parseInt(p2.Priority)) ? -1 : 0);
+      // console.log(data);
       setSkills(data);
     })
   },[])
@@ -74,10 +79,17 @@ const [skills, setSkills] = useState([]);
                   data-for={work.name}
                   key={work.name}
                   >
+                  <div className='app__flex'>
+                  <div className='app__experienceImagediv' >
+                  <img src={urlFor(work.icon)} alt={work.name} className='app__experienceImage' />
+                  </div>
+                  <div className='app__experienceDetails'>
                   <h4 className="bold-text">{work.name}</h4>
                   <p className="p-text">{work.company}</p>
+                  </div>
+                  </div>
                   </motion.div>
-
+                  
                   <ReactToolTip
                     id={work.name}
                     effect='solid'
@@ -88,8 +100,9 @@ const [skills, setSkills] = useState([]);
                 </ReactToolTip>
               </>
               ))}
+              <hr/>
               </motion.div>
-
+              
               </motion.div>
 
               ))}

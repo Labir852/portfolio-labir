@@ -45,7 +45,14 @@ import myProfile1 from '../assets/photo1.png';
 import myProfile2 from '../assets/photo2.png';
 import SQL from '../assets/MSSQL SERVER.jpg';
 import dotnet from '../assets/asp.net.webp';
-
+import cmsflogo from '../assets/cmsflogo.png';
+import csharp from '../assets/c#.png';
+import photoprofile2 from '../assets/photoprofile2.png';
+import photoprofile3 from '../assets/photoprofile3.png';
+import swe from '../assets/hacker.png';
+import researcher from '../assets/researcher.png';
+import researcher1 from '../assets/research.png';
+import instructor from '../assets/instructor.png';
 
 export default {
   SQL,
@@ -90,5 +97,13 @@ export default {
   Cprogramming,
   java,
   resumeIcons,
-  profilePhoto
+  profilePhoto,
+  cmsflogo,
+  csharp,
+  photoprofile2,
+  photoprofile3,
+  swe,
+  researcher,
+  researcher1,
+  instructor
 } ;

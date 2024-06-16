@@ -81,6 +81,7 @@ const test = testimonials[currentIndex];
           key = {brand._id}
           >
           <img src={urlFor(brand.imgUrl)} alt={brand.name}/>
+          {/* <h4 style={{textAlign:"center",color:"#313bac"}}>{brand.name}</h4> */}
           </motion.div>
         
        ))}

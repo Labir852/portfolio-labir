@@ -1,0 +1,119 @@
+// .preloader {
+//     height: 100vh;
+//     height: calc(var(--vh, 1vh) * 100);
+//     width: 100%;
+//     background: #282c34;
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 50;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: --white-color;
+//     overflow: hidden !important;
+
+//     .texts-container {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         // flex-direction: row;
+//         height: 35px;
+//         width: 70%;
+//         font-size: 30px;
+//         overflow: hidden;
+//         font-weight: 800;
+//         opacity: 0;
+//         color: #ffffff;
+
+       
+//     }
+// }
+
+.preloader {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    // background: #cbcbcb;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    overflow: hidden !important;
+  
+    .texts-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      width: 70%;
+      font-size: 30px;
+      font-weight: 800;
+      color: #282c34;
+      text-align: center;
+      opacity: 0; /* Start fully transparent */
+      animation: fadeIn 2s forwards, fadeOut 3s forwards 4s; /* Fade in over 2 seconds, fade out after 4 seconds over 3 seconds */
+  
+      span {
+        margin: 10px 0;
+  
+        img {
+          margin-left: 5px;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade out animation */
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .texts-container {
+      font-size: 24px; /* Adjust font size for tablets and small screens */
+      width: 80%;
+  
+      span {
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .texts-container {
+      font-size: 18px; /* Adjust font size for mobile screens */
+      width: 90%;
+  
+      span {
+        img {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+  
+  

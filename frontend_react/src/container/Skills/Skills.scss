@@ -31,6 +31,19 @@
   }
 }
 
+.app__experienceImage{
+  height: 100%;
+  width: 100%;
+}
+.app__experienceImagediv{
+  height: 50px;
+  width: 50px;
+  // background-color: whitesmoke;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
 .app__skills-item {
   flex-direction: column;
   text-align: center;
@@ -116,7 +129,10 @@
     }
   }
 }
-
+.app__experienceDetails
+{
+  padding: 5px;
+}
 .app__skills-exp-year {
   margin-right: 3rem;
 

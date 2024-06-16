@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
 import './Header.scss';
+import { client, urlFor } from '../../client';
 
 const scaleVariants = 
 {
@@ -19,6 +20,20 @@ const scaleVariants =
 }
 
 const Header = () => {
+  const [headerImages,setHeaderImages] = useState();
+  useEffect(() => {
+    const query = '*[_type == "header"]';
+    client.fetch(query)
+    .then((data)=>
+      {
+        console.log(data[0]);
+        const res = data[0];
+        setHeaderImages(res);
+      }
+      
+  );
+
+  },[])
   
   return (
     <div className="app__header app__flex">
@@ -45,9 +60,9 @@ const Header = () => {
       className="app__header-img">
       
 
-      <img src={images.myProfile1} alt="profile-bg" />
+      <img src={images.photoprofile2} alt="profile-bg" />
 
-      
+      {console.log(headerImages)}
       <motion.img whileInView={{scale:[0,1]}} 
       transition={{duration:1,ease:'easeInOut'}}
       className="overlay_circle" src={images.circle} 
