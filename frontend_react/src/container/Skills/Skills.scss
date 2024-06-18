@@ -34,13 +34,14 @@
 .app__experienceImage{
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 .app__experienceImagediv{
   height: 50px;
   width: 50px;
   // background-color: whitesmoke;
   border-radius: 50%;
-  margin-right: 20px;
+  // margin-right: 20px;
 }
 
 

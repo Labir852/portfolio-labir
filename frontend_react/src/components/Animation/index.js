@@ -337,12 +337,12 @@ export const preLoaderAnim = () => {
       css: { overflowY: "hidden", height: "90vh" },
     })
     .to(".texts-container", {
-      duration: 0.5,
+      duration: 0.01,
       opacity: 1,
       ease: "Power3.easeOut",
     })
     .from(".texts-container span", {
-      duration: 0.5,
+      duration: 0.1,
       delay: 0.5,
       y: 50,
       opacity: 0,

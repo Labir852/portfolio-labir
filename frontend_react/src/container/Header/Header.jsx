@@ -57,7 +57,7 @@ const Header = () => {
         className="app__header-circles">
           {[images.dotnet,images.react,images.SQL,].map((circle,index) => (
             <div className="circle-cmp app__flex" key={`circle-${index}`}>
-              <img src={circle} alt="circle" />
+              <img src={circle} className='app__experienceImage' alt="circle" />
             </div>
           ))}
       </motion.div>

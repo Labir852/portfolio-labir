@@ -42,8 +42,8 @@ const [skills, setSkills] = useState([]);
             key={skills.name}
             >
 
-            <div className="app__flex" style={{backgroundColor:skills.bgColor}}>
-              <img src={urlFor(skills.icon)} alt={skills.name} />
+            <div className="app__flex " style={{backgroundColor:skills.bgColor}}>
+              <img src={urlFor(skills.icon)} alt={skills.name} className='app__experienceImage' />
             </div>
 
             <p className="p-text">{skills.name}</p>

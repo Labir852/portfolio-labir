@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@sanity/cli": "^3.23.4",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
@@ -10,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "cors": "^2.8.5",
+    "emailjs": "^4.0.3",
     "framer-motion": "^7.6.1",
     "gsap": "^3.12.5",
     "node-sass": "^9.0.0",

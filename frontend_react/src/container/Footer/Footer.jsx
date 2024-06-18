@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { client } from '../../client';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -10,6 +11,7 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const [loading, setLoading] = useState(false);
+  const [isSentMessage,setIsSentMessage] = useState("");
 
   const {name, email, message} = formData;
 
@@ -26,16 +28,23 @@ const Footer = () => {
       name:name,
       email:email,
       message:message,
+      Date: new Date().toLocaleString(),
     }
 
      await client.create(contact)
     .then( () =>{
-      console.log(contact);
       setLoading(false);
       setIsFormSubmitted(true);
-
+      setIsSentMessage("Thank you for getting in touch.");
     })
-    .catch((err) => console.log(err))
+    .catch((err) => 
+      {
+        console.log(err);
+        setIsSentMessage("An error occured while sending message. Try Reloading the Page to send message.");
+        setLoading(false);
+      }
+  
+  )
   }
 
 
@@ -62,7 +71,7 @@ const Footer = () => {
         </div>
 
         {
-          !isFormSubmitted 
+          !isFormSubmitted
           
           ?
 
@@ -84,14 +93,14 @@ const Footer = () => {
           </div>
 
           <button type="button" onClick={handleSubmit} className="p-text">{loading ?  'Sending' : 'Send Message'}</button>
-          
         </div>
+        
 
         :
         
         <div>
           <h3 className="head-text">
-          Thank you for getting in touch.
+          {isSentMessage}
           </h3>
         </div>
         }
