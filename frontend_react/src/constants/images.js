@@ -55,6 +55,8 @@ import researcher1 from '../assets/research.png';
 import instructor from '../assets/instructor.png';
 import hellowelcome from '../assets/hellowelcome.png';
 import hello from '../assets/hello.gif';
+import coffee from '../assets/coffee-cup.png';
+import chat from '../assets/chat.png'
 export default {
   SQL,
   dotnet,
@@ -108,5 +110,7 @@ export default {
   researcher1,
   instructor,
   hellowelcome,
-  hello
+  hello,
+  coffee,
+  chat
 } ;

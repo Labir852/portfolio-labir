@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { client } from '../../client';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -50,7 +49,7 @@ const Footer = () => {
 
   return (
     <>
-        <h2 className="head-text">Take a Coffee & Chat with me</h2>
+        <h2 className="head-text">Take a Coffee <img src={images.coffee} alt = "swe"style={{height:"40px",width:"40px"}}/> & Chat with me <img src={images.chat} alt = "swe"style={{height:"40px",width:"40px"}}/> </h2>
 
         <div className="app__footer-cards">
             <div className="app__footer-card">
