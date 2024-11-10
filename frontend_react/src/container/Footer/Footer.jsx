@@ -59,7 +59,8 @@ const Footer = () => {
 
             <div className="app__footer-card">
                 <img src={images.resumeIcons} alt="resume" />
-                <a href={resume}  className="p-text" rel="noreferrer">My Resume</a>
+                <a href={resume} target="_blank"  className="p-text" rel="noreferrer">My Resume</a>
+
             </div>
 
             <div className="app__footer-card">
