@@ -1,16 +1,17 @@
-import React from 'react';
+import React ,{useEffect,useState} from 'react';
 import './App.scss';
 import { Navbar } from './components';
 import { About, Footer, Header, Skills, Testimonials, Work } from './container';
 import Journals from './container/Journals/Journals';
 import PreLoader from './components/PreLoader/PreLoader';
 const App = () => {
+  
   return (
     <>
       <PreLoader/>
       
       <div className='app'>
-          <Navbar/>
+          <Navbar />
           <Header/>
           <Skills/>
           <About/>

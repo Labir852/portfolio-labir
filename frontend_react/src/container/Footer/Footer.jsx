@@ -4,6 +4,7 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footer.scss';
 import resume from '../../assets/Tanvir\'s Resume.pdf'
+import Swal from 'sweetalert2';
 const Footer = () => {
 
   const [formData, setFormData] = useState({name:'',email:'',message:''});
@@ -12,7 +13,9 @@ const Footer = () => {
   const [loading, setLoading] = useState(false);
   const [isSentMessage,setIsSentMessage] = useState("");
 
+
   const {name, email, message} = formData;
+  const isDisabled = formData.name!=="" && formData.email!=="" && formData.message!=="";
 
   const handleChangeInput = (e) =>{
     const {name, value} = e.target;
@@ -21,29 +24,48 @@ const Footer = () => {
   
    const handleSubmit = async ()=> {
     // Pulling out the payload from the body
-    setLoading(true);
-    const contact = {
-      _type:"contact",
-      name:name,
-      email:email,
-      message:message,
-      Date: new Date().toLocaleString(),
+    if(!isDisabled)
+    {
+      Swal.fire({
+        icon: 'warning',
+        title: `Please fill the values in the form then submit!`,
+        showConfirmButton: true,
+        // timer: 3000
+      })
     }
-
-     await client.create(contact)
-    .then( () =>{
-      setLoading(false);
-      setIsFormSubmitted(true);
-      setIsSentMessage("Thank you for getting in touch.");
-    })
-    .catch((err) => 
-      {
-        console.log(err);
-        setIsSentMessage("An error occured while sending message. Try Reloading the Page to send message.");
-        setLoading(false);
+    else
+    {
+      setLoading(true);
+      const contact = {
+        _type:"contact",
+        name:name,
+        email:email,
+        message:message,
+        Date: new Date().toLocaleString(),
       }
   
-  )
+       await client.create(contact)
+      .then( () =>{
+        setLoading(false);
+        setIsFormSubmitted(true);
+        Swal.fire({
+          icon: 'success',
+          title: `Successfully sent message!`,
+          showConfirmButton: true,
+          // timer: 3000
+        })
+        setIsSentMessage("Thank you for getting in touch.");
+      })
+      .catch((err) => 
+        {
+          console.log(err);
+          setIsSentMessage("An error occured while sending message. Try Reloading the Page to send message.");
+          setLoading(false);
+        }
+    
+      )
+    }
+    
   }
 
 
@@ -92,7 +114,7 @@ const Footer = () => {
             />
           </div>
 
-          <button type="button" onClick={handleSubmit} className="p-text">{loading ?  'Sending' : 'Send Message'}</button>
+          <button type="button" onClick={handleSubmit}  className="p-text">{loading ?  'Sending' : 'Send Message'}</button>
         </div>
         
 

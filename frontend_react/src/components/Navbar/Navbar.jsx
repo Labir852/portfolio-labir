@@ -4,6 +4,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import './Navbar.scss';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  
   return (
     <nav className="app__navbar">
         <div className="app__navbar-logo">
