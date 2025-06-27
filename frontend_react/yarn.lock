@@ -5324,6 +5324,7 @@ from2@^2.1.1:
     react-scripts "5.0.1"
     react-tooltip "^4.4.3"
     sass "^1.80.6"
+    sweetalert2 "^11.14.5"
     web-vitals "^2.1.4"
 
 fs-constants@^1.0.0:
@@ -9701,10 +9702,10 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-sweetalert2@^11.14.5:
-  version "11.14.5"
-  resolved "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.14.5.tgz"
-  integrity sha512-8MWk5uc/r6bWhiJWkUXyEuApfXAhSCZT8FFX7pZXL7YwaPxq+9Ynhi2dUzWkOFn9jvLjKj22CXuccZ+IHcnjvQ==
+sweetalert2@^11.22.1:
+  version "11.22.1"
+  resolved "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.22.1.tgz"
+  integrity sha512-3dGb50jlfcJ0OHZ5D4hJWK/cIYAfCnxK5QQVndOJqhyiCYJozINEfHG7wvRbkACj60hDnPWu+t9EFcbYWaSEuQ==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
